@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tweenlite cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- css file -->
+    <link type="text/css" rel="stylesheet" href="assets/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- header -->
+        <div id="header">
+            <div id="header_bckg">
+                <img src="assets/images_source.png">
+            </div>
+            <!-- next and prev buttons -->
+            <div id="buttons">
+                <div id="btn_wrapper1" onclick="prev(-1)">
+                    <div id="prev"><</div>
+                </div>
+                <div id="btn_wrapper2" onclick="next(1)">
+                    <div id="next">></div>
+                </div>
+            </div>
+        </div>
+        <!-- margin between header and image holder -->
+        <div class="border"></div>
+        <!-- dynamic image loading -->
+        <div id="images">
+            <img src="assets/0.jpg">
+            <img src="assets/1.jpg">
+            <img src="assets/2.jpg">
+            <img src="assets/3.jpg">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
